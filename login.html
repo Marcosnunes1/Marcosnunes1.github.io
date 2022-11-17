@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+  <main>
+    <header>
+        <div class="menu">
+            <img src="logo.png" alt="" style="max-width: 50px;">
+            <a href="index.html">Página Inicial</a>
+        </div>
+    </header>
+
+    <section class="vh-100 login">
+      <h1>
+        <span>Bem-Estar</span>
+      </h1>
+      <h2>
+        <p>Leve, Uma Vida Leve Como Uma <img src="LOGODEITADA.png" alt="logo" style="max-width: 45px; padding-bottom: 10px;border-radius: 0rem;"></p>
+      </h2>
+        <div class="container py-5 h-10">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <img src="logo-removebg-contornado.png" alt="logo" style="max-width: 150px; padding-bottom: 40px;border-radius: 0rem;">
+                  <form role="form" onsubmit="signIn(event);" autocomplete="off">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input type="email" name="email" id="email"class="form-control" placeholder="Usuário"required>
+                    
+                    </div>
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Senha"required>
+                    </div>
+
+                    <div class="form-group">
+                      <button class="btn btn-primary btn-lg btn-block button" type="submit">Entrar</button>
+                    </div>
+                  </form>
+                  <p>Não tem uma conta? <a href="signup.html">Cadastre</a> Aqui</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="./scriptLOGIN.js"></script>
+</body>
+</html>

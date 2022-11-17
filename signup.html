@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylessignup.css">
+</head>
+<body>
+    <main>
+        
+
+        <div class="container py-5 h-10">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                    <h2>CADASTRO</h2>
+                    <form role="form" onsubmit="signUp(event);" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" name="fname" id="fname" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lname" id="lname" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="pwd" id="pwd" placeholder="Senha" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Cadastrar</button>
+
+                    </div>
+                    <p>Já é membro? <a href="login.html">Login</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+        
+    </main>
+
+    <script type="text/javascript" src="./scriptLOGIN.js"></script>
+</body>
+</html>

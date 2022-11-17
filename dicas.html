@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dicas.css">
+    <script src="https://kit.fontawesome.com/1236d2002a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Bem-Estar Dicas</title>
+</head>
+
+<body>
+ 
+   <!--------------------  Cabeçalho com BOOTSTRAP------------------>     
+<header class="Header">    
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img class="Logo" src="img/LOGO.png" alt="LOGO">
+      <button onclick="window.location.href='login.html'" type="button" class="Login"><strong>Login</strong></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 Menu">
+          <li class="nav-item Inicial">
+            <a href="index.html" class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          </li>
+          <li class="nav-item Ajuda">
+            <a href="index.html" class="nav-link" href="#">Ajuda</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 Pesquisa-menu" type="search" placeholder="Busca" aria-label="Search">
+          <button class="btn btn-outline-success Pesquisa-menu" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+  <!------------- --  -  FIM DO CABEÇALHO -  -- ------------------>  
+
+   <main class="container-fluid Main">
+
+     <section class="container Section1">
+           <div class="row Pai">
+                <div class="col-sm-12 col-md-3 col-lg-2 bloco-1">
+                          
+                  
+                  <button class="btn-dicas" type="button"><strong>Dicas</strong></button>
+                  
+                   
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-5 Pesquisa" id="Pesquisa">
+
+                  <div class="d-flex">
+                    <input class="form-control me-2 barra" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button onClick="pesquisar()" class="btn btn-outline-success Search" type="submit">Search</button>
+                  </div>
+
+             </div> 
+               <div class="col-sm-12 col-md-3 col-lg-2 bloco-2">
+                <a href="alimentacao.html"><button class="btn-alimentos" type="button"><strong>Alimentação</strong></button></a>
+             </div>
+
+             <div class="col-sm-12 col-md-3 col-lg-2 bloco-3">
+              <a href="aplicativo.html"><button class="btn-aplicativos" type="button"><strong>Aplicativos</strong></button></a>
+            </div>
+
+           
+        </div> 
+    </section>
+
+    
+    
+    <section class="container section2">
+
+     <div class="row"> 
+        <div class="col-sm-12 col-md-12 col-lg-2 Options ">
+
+             <ul class="menu-lateral">
+                <li><img src="img/terapeuticosdicas.png" alt="">Terapéuticas</li>
+                <li><img src="img/exerciciosfisicos.png" alt="">Exercícios Físicos</li>
+                <li><img src="img/alimenticios.png" alt="">Alimentícios</li>
+                <li><img src="img/produtividade.png" alt="">Produtividade</li>
+                <li class="favoritos"><img class="estrela" src="img/estrela.png" alt="">Favoritos</li>
+              </ul>
+
+        </div>
+
+       <div class="col-sm-12 col-md-12 col-lg-9 Lista">
+
+            <div class="Item">
+              
+                 <img class="ilustrativa" src="img/planejamento.jpg" alt="imagem">
+                            
+                  <p class="conteudo-1"> Planeje a sua semana. Montar um cronograma pessoal para a semana ou até mesmo para o mês , estabelecendo pequenas metas , ira te ajudar a focar mais em seus objetivos pessoais e também contribui para o controle da ansiedade . Já que pensar em dar apenas um passo por vez , evita os pensamentos excessivos no futuro.
+                    <img class="classificacao produtividade-1 item-1" src="img/produtividade.png" alt="">
+                    <img class="classificacao terapeuticos-1 item-1" src="img/terapeuticosdicas.png" alt="">
+                    
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos" >   
+                  </p>
+              
+            </div>
+
+            
+            <div class="Item">
+              
+              <img class="ilustrativa" src="img/calcular_tmb.jpeg" alt="imagem">
+                         
+               <p class="conteudo-1"> Calcule o seu gasto energético total , existem diversas fórmulas para calcular o seu gasto total . Com ele você será capaz de controlar e administrar melhor a sua dieta.
+                 <img class="classificacao" src="img/alimenticios.png" alt="">
+                 
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-2">   
+               </p>
+           
+         </div>
+            
+         <div class="Item">
+              
+          <img class="ilustrativa" src="img/contar_Calorias.jpg" alt="imagem">
+                     
+           <p class="conteudo-1">  Contar a quantidade de calorias que você ingere durante o dia , pode facilitar quantas calorias você deve consumir para ganhar ou perder peso. 
+             <img class="classificacao" src="img/alimenticios.png" alt="">
+           
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-3">   
+            </p>
+       
+        </div>
+          
+          <div class="Item">
+                    
+            <img class="ilustrativa" src="img/dormir.webp" alt="imagem">
+                      
+            <p class="conteudo-1">  Durma em média 8 horas por dia , já que uma noite de sono impacta diretamente na sua rotina diária . Uma noite de sono ruim , pode afetar seu humor e disposição durante todo o dia , diminuindo o seu rendimento em todas as atividades.
+              <img class="classificacao terapeuticos" src="img/terapeuticosdicas.png" alt="">
+           
+              <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-4">   
+            </p>
+        
+          </div>
+          <div class="Item">
+                    
+            <img class="ilustrativa" src="img/agua.jpg" alt="imagem">
+                      
+            <p class="conteudo-1">  Beber bastante água é essencial para uma boa saúde de forma geral. Caso você tenha dificuldade em controlar o seu consumo durante o dia , existem diversos aplicativos que te ajudam a controlar essa ingestão.
+              <img class="classificacao" src="img/produtividade.png" alt="">
+            
+              <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-5">   
+            </p>
+        
+      </div>
+
+      <div class="Item">
+                    
+        <img class="ilustrativa" src="img/atv_fisica.jpg" alt="imagem">
+                  
+        <p class="conteudo-1"> Pratique 30 minutos de atividade física todos os dias , de acordo com a OMS o ideal é que as pessoas se exercitem 150 minutos durante a semana. Essa meta pode ser atingida praticando 30 minutos , 5 vezes na semana.
+          <img class="classificacao item-6 exf-6" src="img/exerciciosfisicos.png" alt="">
+        
+          <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1 item-6" id="favoritos-6">   
+        </p>
+    
+      </div>
+
+      <div class="Item">
+                    
+        <img class="ilustrativa" src="img/especialista.webp" alt="imagem">
+                  
+        <p class="conteudo-1">  Procure um <strong>especialista</strong> na área , um nutricionista , nutrólogo , psicólogo e entre outros . Pode ser o mais ideal caso você esteja passando por algum tipo de dificuldade , ele poderá te guiar de maneira mais específica para atender as suas necessidades pessoais.
+          <img class="classificacao" src="img/produtividade.png" alt="">
+        
+          <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-7">   
+        </p>
+    
+  </div>
+
+      
+          </div>
+
+        </div>
+
+
+
+       </div> 
+
+     </div> 
+      
+    </section>
+
+  </main>
+    
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="alimentacao.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1236d2002a.js" crossorigin="anonymous"></script>
+    <title>Bem-Estar Alimentação</title>
+</head>
+
+<body>
+ 
+   <!--------------------  Cabeçalho com BOOTSTRAP------------------>     
+<header class="Header">    
+   <nav class="navbar navbar-expand-lg bg-green">
+    <div class="container-fluid">
+      <img class="Logo" src="img/LOGO.png" alt="LOGO">
+      <button onclick="window.location.href='login.html'" type="button" class="Login"><strong>Login</strong></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 Menu">
+          <li class="nav-item Inicial">
+            <a href="index.html" class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          </li>
+          <li class="nav-item Ajuda">
+            <a href="index.html" class="nav-link" href="#">Ajuda</a>
+          </li>
+        </ul>
+        <form class="d-flex formulario" role="search">
+          <input class="form-control me-2 Pesquisa-menu" type="search" placeholder="Busca" aria-label="Search">
+          <button class="btn btn-outline-success Pesquisa-menu" id ="enviar" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+  <!------------- --  -  FIM DO CABEÇALHO -  -- ------------------>  
+
+   <main class="container-fluid Main">
+
+     <section class="container Section1">
+           <div class="row Pai">
+                <div class="col-sm-12 col-md-3 col-lg-2 bloco-1">
+
+                    <button class="btn-alimentos" type="button"><strong>Alimentação</strong></button>
+                  
+
+                   
+                </div>
+
+               <div class="col-sm-12 col-md-12 col-lg-5 Pesquisa" id="Pesquisa">
+
+                    <div class="d-flex">
+                      <input class="form-control me-2 barra" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button onClick="pesquisar()" class="btn btn-outline-success Search" type="submit">Search</button>
+                    </div>
+
+               </div> 
+               <div class="col-sm-12 col-md-3 col-lg-2 bloco-2">
+                <a href="aplicativo.html"><button class="btn-aplicativos" type="button"><strong>Aplicativos</strong></button></a>
+             </div>
+
+             <div class="col-sm-12 col-md-3 col-lg-2 bloco-3">
+              <a href="dicas.html"><button class="btn-dicas" type="button"><strong>Dicas</strong></button></a>
+            </div>
+           
+        </div> 
+    </section>
+
+    
+    
+    <section class="container section2">
+
+     <div class="row"> 
+        <div class="col-sm-12 col-md-12 col-lg-2 Options ">
+
+             <ul class="menu-lateral">
+                <li><img src="img/MORGANGOBOLADO.png" alt="">Fast-Food</li>
+                <li><img src="img/LARANJABOLADA.png" alt="">Pratos Diários</li>
+                <li><img src="img/CAJUBOLADO.png" alt="">Vegetarianos</li>
+                <li><img src="img/CEREJABOLADO.png" alt="">Equivalentes</li>
+                <li><img src="img/ABACAXIBOLADO.png" alt=""> Evitar</li>
+                <li class="favoritos"><img class="estrela" src="img/estrela.png" alt="">Favoritos</li>
+              </ul>
+
+        </div>
+
+       <div class="col-sm-12 col-md-12 col-lg-9 Lista">
+    
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/banana_canela.jpg" alt="imagem">
+                     
+           <p class="conteudo-1"> <strong>Banana + Canela e Aveia :</strong> Rápido e fácil preparo , basta amassar a banana , jogar uma colher de sopa de aveia e uma colher de chá de canela. 
+            Benefícios : Fonte de fibras , a banana com a aveia ajuda a manter a saciedade por um bom tempo , já a canela é um excelente termogênico ajudando na queima de gordura . É um ótimo prato para comer durante a noite , pois pode melhorar a sua qualidade de sono.            
+             <img class="classificacao item-1" src="img/MORGANGOBOLADO.png" 
+             alt="morango"> 
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos">         
+            </p>
+       
+        </div>
+
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/refrigerante.jpg" alt="imagem">
+                     
+           <p class="conteudo-1">Evitar os <strong>refrigerantes</strong> pode ser uma tarefa difícil para os que já estão acostumados com o consumo do mesmo, mas o fato é, que seu consumo não contribui positivamente para sua saúde, sendo assim o ideal, evitar. O refrigerante possúi quantidades
+            muito elevadas de açucares em sua composição, além de corantes e outros componentes prejudiciais. Em alguns casos a substituição do mesmo por um refrigerante zero, pode ser interessante, mas vale ressaltar que possuí taxas ainda mais elevadas de sódio, entre outros malefícios que não deixa de ter só por ser zero, sendo assim, o ideal seria evitar por completo.            
+            <img class="classificacao" src="img/ABACAXIBOLADO.png" alt="abacaxi">
+            
+            <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-2">         
+             
+            </p>
+       
+        </div>
+
+        
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/suco.jpg" alt="imagem">
+                     
+           <p class="conteudo-1"><strong>Sucos de caixinha ou pó</strong> são muito comuns como uma opção alternativa aos refrigerantes, mas não se deixe enganar, a escolha do mesmo pode ser ainda mais prejudicial quando comparadas com alguns refrigerantes. Esses sucos possuem praticamente os mesmos grandes problemas dos refris, como a alta taxa de açucares, corantes, aromatizantes entre outros problemas,
+            ou seja, também deve ser evitado ao máximo, por não contribuir em nada ou muito pouco para nossa saúde. Uma opção muito interessante seria fazer a substituição do mesmo por sucos integrais, que existem até benefícios pelo consumo deles, uma opção muito viável.            
+             <img class="classificacao" src="img/ABACAXIBOLADO.png" alt="abacaxi">
+            
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-3">         
+            
+            </p>
+       
+        </div>
+
+        
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/prato.jpg" alt="imagem">
+                     
+           <p class="conteudo-1">Um pacote de <strong>biscoito</strong> comum, como o famoso passatempo, oreo, chocolicia por exemplo, quando se consumido um pacote de 130g (medida do pacote de passatempo), nesse consumo de poucos biscoitos é feita a ingestão de mais de 500kcal, que não proporcionará saciedade e baixas quantidades de nutrientes importantes. Sendo equivalente, em calorías, á um prato de comida com aproximadamente 175g de arroz, 50g de feijão, 100g de carne e salada.
+            Um prato que traria muito mais saciedade, muito mais equilibrado em questão de macronutrientes e que com certeza contribuiria melhor para sua saúde se feita a troca.            
+             <img class="classificacao" src="img/CEREJABOLADO.png" alt="cereja">
+            
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-4">         
+            
+            </p>
+       
+        </div>
+
+        
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/fastfood.jpg" alt="imagem">
+                     
+          <p class="conteudo-1"> Digamos que você faça um lanche no <strong>McDonalds</strong>, e peça o novo McBrasil, uma batata pequena, beba um copo de Coca-Cola e pra finalizar com a sobremesa, coma o novo McFlurry Brasil. Essa refeição possúi mais do que <strong> 2000 calorias</strong> o que pra muitas pessoas seria a quantidade de calorias que deveria ser consumida em um dia todo, sendo que foi em apenas uma refeição com produtos altamente industrializados e prejudiciais a saúde. Refeição essa, equivaleria a basicamente: um café da manhã equilibrado, um almoço caprichado com direito a repetir, um lanche durante a tarde e um jantar equilibrado. Tudo isso com as mesmas calorias.
+            <img class="classificacao" src="img/CEREJABOLADO.png" alt="cereja">
+         
+            <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favorito-5">         
+            
+           </p>
+        </div>
+
+        
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/almondega.jpg" alt="imagem">
+                     
+           <p class="conteudo-1"> <strong>Almôndegas de Lentilhas</strong> são uma ótima opção pra quem é vegetariano e busca uma refeição saudável e que possui aquilo que muitas vezes é a dificuldade do consumo dos vegetarianos, a proteina. Essa receita é levada no forno e seus ingredientes são: lentilhas(descascadas), nozes, aveia triturada e especiarias, colocando tudo no processador, fazendo suas bolinhas e assando no forno, simples assim.
+             <img class="classificacao" src="img/CAJUBOLADO.png" alt="caju">
+          
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favoritos-6">         
+            
+            </p>
+       
+        </div>
+
+        
+        <div class="Item">
+              
+          <img class="ilustrativa" src="img/crepioca.jpg" alt="imagem">
+                     
+           <p class="conteudo-1"> A <strong>crepioca</strong> é uma receita muito flexivel e pode ser muito explorada para usar em dietas. Seu preparo é feito com 1 ovo, 1 colher de goma de tapioca, sal no caso da salgada e adoçante no caso da doce. Depois é so bater tudo junto, colocar na frigideira, rechear e já ta pronto pra comer! Recomendações de recheio: Atum, frango, queijo, peito de peru são opções que combinam bastante.
+             <img class="classificacao" src="img/MORGANGOBOLADO.png" alt="morango">
+          
+             <img src="img/estrela.png" alt="estrela" class="classificacao favoritos-1" id="favorito-7">         
+            
+            </p>
+       
+        </div>
+
+
+
+
+       </div> 
+
+     </div> 
+      
+    </section>
+
+  </main>
+</body>
+
+</html>
